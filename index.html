@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Pizza</title>
+</head>
+<body>
+  
+  <div class="container-xl">
+    <h1>Pitsa buyirtma qilish</h1>
+    
+    <div class="d-flex">
+      <div>
+        <form class="mb-3 pizza-ordering" action="" name="pizza-ordering">
+          <div>
+            <h4>Noni qanday bo'lsin</h4>
+              
+              <select class="bread-size" name="" id="breadSize" onchange="getSelectValue()">
+                <option class="bread" name="bread" value="Non: Yupqa">Yupqa</option> 
+                <option class="bread" name="bread" value="Non: O'rtancha">O'rtancha</option>
+                <option class="bread" name="bread" value="Non: Qalin">Qalin</option>
+                <option class="bread" name="bread" value="Non: Juda qalin">Juda qalin</option>
+              </select>
+            </div>
+          </form>
+          
+          
+          <form class="mb-3 pizza-ordering-diametr" action="" name="formDiameter">
+            <div>
+              <h4>Kattaligi</h4>
+              <div class="d-flex">
+                <div class="me-2">
+                  <input name="size" class="check" type="radio" value="25cm">
+                  <p class="check-numbers">25cm</p>
+                </div>
+                
+                <div class="me-2">
+                  <input name="size" class="check" type="radio" value="30cm">
+                  <p class="check-numbers">30cm</p>
+                </div>
+                
+                <div class="me-2">
+                  <input name="size" class="check" type="radio" value="35cm">
+                  <p class="check-numbers">35cm</p>
+                </div>
+              </div>
+            </div>
+          </form>
+          
+          
+          <form class="mb-3 pizzaProducts" action="" name="pizzaProducts">
+            <div>
+              <h4>Ustiga nima solaylik</h4>
+              <div class="d-flex">
+                <div class="d-flex flex-column">
+                  <div class="d-flex">
+                    <input class="check-products tomato" type="checkbox" onclick="myFunction()">
+                    <p class="m-0 mx-1">Pomidor</p>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <input class="check-products meat" type="checkbox" onclick="mySecondFunction()">
+                    <p class="m-0 mx-1">Kurka go'shti</p>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <input class="check-products gress" type="checkbox" onclick="myThirdFunction()">
+                    <p class="m-0 mx-1">Zaytun</p>
+                  </div>
+                </div>
+                
+                <div class="d-flex flex-column mx-5">
+                  <div class="d-flex">
+                    <input class="check-products cucumber" type="checkbox" onclick="myFourFunction()">
+                    <p class="m-0 mx-1">Tuzlangan bodiring</p>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <input class="check-products mushrums" type="checkbox" onclick="myFiveFunction()">
+                    <p class="m-0 mx-1">Qo'ziqorni</p>
+                  </div>
+                  
+                  <div class="d-flex">
+                    <input class="check-products qazi" type="checkbox" onclick="mySixFunction()">
+                    <p class="m-0 mx-1">Qazi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          
+          <form class="mb-3 pizza-ordering" action="" name="pizza-ordering">
+            <div>
+              <h4>Qo'shimchalar</h4>
+              <div class="d-flex">
+                <div class="d-flex">
+                  <input class="check-products spicy" type="checkbox" onclick="mySevenFunction()">
+                  <p class="m-0 mx-1">Achchiq</p>
+                </div>
+                
+                <div class="d-flex mx-3">
+                  <input class="check-products sosiges" type="checkbox" onclick="myEightFunction()">
+                  <p class="m-0 mx-1">Sosiskalar</p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        
+        <div class="me-auto">
+          <div>
+            <div>
+              <p class="text-bread">Non:</p>
+              <p class="mini-text"></p>
+            </div>
+            <p class="diameter"></p>
+            <div>
+              <p class="m-0">Ustida:</p>
+              <p class="m-0 text empty">-Pomidor</p>
+              <p class="m-0 text-meat empty">-Kurka go'shti</p>
+              <p class="m-0 text-gress empty">-Zaytun</p>
+              <p class="m-0 text-cucumber empty">-Tuzlangan bodiring</p>
+              <p class="m-0 text-mushrums empty">-Qo'ziqorni</p>
+              <p class="m-0 text-qazi empty">-Qazi</p>
+            </div>
+            
+            <div>
+              <p class="mt-2">Qo'shimchalar</p>
+              <p class="m-0 empty text-spicy">Achchiq</p>
+              <p class="m-0 empty text-sosiges">Sosiskalar</p>
+            </div>
+            <button class="btn btn-warning" type="submit" name="pizza-ordering">Buyurtma berish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+  </html>
